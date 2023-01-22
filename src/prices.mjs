@@ -69,9 +69,9 @@ function createApp(database) {
     return Math.ceil(baseCost * (1 - reduction / 100));
   }
 
-  function calculateReduction(tdate) {
+  function calculateReduction(date) {
     let reduction = 0;
-    if (tdate && isMonday(tdate) && !isHoliday( tdate)) {
+    if (date && isMonday(date) && !isHoliday( date)) {
       reduction = 35;
     }
     return reduction;
